@@ -1,0 +1,15 @@
+losstype_ID,ID,lossdesc,createdAt,createdBy,modifiedAt,modifiedBy
+17645327-ab61-4719-a07e-fae27f2cbabf,29374011-137a-4431-b3e1-1b4383b22266,lossdesc-29374011,2013-03-04T00:00:00.000Z,createdBy.hhl4r@example.com,2001-10-10T00:00:00.000Z,modifiedBy.hhl4r@example.com
+17645327-ab61-4719-a07e-fae27f2cbabf,29374012-2f4b-4423-93cd-a628bb2dcff1,lossdesc-29374012,2022-10-18T00:00:00.000Z,createdBy.hhl4s@example.org,2003-01-10T00:00:00.000Z,modifiedBy.hhl4s@example.com
+17645328-5024-4c8e-8787-0ff2de715724,50130808-2ad9-42bf-87c0-e6f4140c1f53,lossdesc-5013080,2018-11-07T00:00:00.000Z,createdBy.2zg48@example.org,2023-09-01T00:00:00.000Z,modifiedBy.2zg48@example.net
+17645328-5024-4c8e-8787-0ff2de715724,50130810-ef61-4398-bdb2-e08dad4207a1,lossdesc-5013081,2007-02-18T00:00:00.000Z,createdBy.2zg49@example.org,2011-10-17T00:00:00.000Z,modifiedBy.2zg49@example.com
+17645329-5d50-4714-af82-02ad86c0909e,13659065-b2d1-489e-bc0f-d8ecf78fe73d,lossdesc-13659065,2019-08-21T00:00:00.000Z,createdBy.84reh@example.com,2011-03-08T00:00:00.000Z,modifiedBy.84reh@example.com
+17645329-5d50-4714-af82-02ad86c0909e,13659066-8c04-4bf0-81a3-a38abd893b14,lossdesc-13659066,2007-11-21T00:00:00.000Z,createdBy.84rei@example.org,2003-11-10T00:00:00.000Z,modifiedBy.84rei@example.net
+17645330-7239-4975-bcd9-4d2559f4914a,24895765-2f27-4c4d-8ba2-a99c52f88aaa,lossdesc-2489576,2021-11-11T00:00:00.000Z,createdBy.1hcyw@example.com,2009-05-15T00:00:00.000Z,modifiedBy.1hcyw@example.org
+17645330-7239-4975-bcd9-4d2559f4914a,2489577e-0dbe-40f9-a9a4-1c44066cc16c,lossdesc-2489577,2011-06-28T00:00:00.000Z,createdBy.1hcyx@example.net,2007-01-17T00:00:00.000Z,modifiedBy.1hcyx@example.net
+17645331-b451-49c4-ba8a-2dd6de0d0272,10578236-7506-43ec-8753-81bf687340cd,lossdesc-10578236,2010-02-04T00:00:00.000Z,createdBy.6aq7w@example.com,2004-12-08T00:00:00.000Z,modifiedBy.6aq7w@example.com
+17645331-b451-49c4-ba8a-2dd6de0d0272,10578237-28eb-4cc1-a07b-8e0f20624f37,lossdesc-10578237,2022-01-04T00:00:00.000Z,createdBy.6aq7x@example.org,2007-03-30T00:00:00.000Z,modifiedBy.6aq7x@example.org
+17645332-e6ca-46cc-94f5-303fc94299d1,26034107-98e3-470d-bc81-e8add9350cdc,lossdesc-26034107,2005-12-14T00:00:00.000Z,createdBy.fi01n@example.net,2006-10-14T00:00:00.000Z,modifiedBy.fi01n@example.com
+17645332-e6ca-46cc-94f5-303fc94299d1,26034108-ad3d-43b5-94fb-56d4450a80a7,lossdesc-26034108,2005-11-27T00:00:00.000Z,createdBy.fi01o@example.com,2014-07-01T00:00:00.000Z,modifiedBy.fi01o@example.org
+17645333-ea28-4170-b4da-2150e63e556b,30006353-ae75-4ee0-b963-d911d01aaf78,lossdesc-30006353,2005-01-15T00:00:00.000Z,createdBy.hv51t@example.com,2004-09-27T00:00:00.000Z,modifiedBy.hv51t@example.net
+17645333-ea28-4170-b4da-2150e63e556b,30006354-3d49-4d26-93b8-5992c44b26e8,lossdesc-30006354,2005-01-11T00:00:00.000Z,createdBy.hv51u@example.com,2001-05-28T00:00:00.000Z,modifiedBy.hv51u@example.org
