@@ -11,7 +11,7 @@ entity Claims : cuid, managed {
     amount      : Integer;
     country     : String(20);
     Losstypes   : Composition of many Losstypes on  Losstypes.losstype = $self;
-} ̰
+} 
 entity Claimtypes : cuid, managed {
     cltype : String(15);
     claims : Association to many Claims on claims.claimType = $self;  

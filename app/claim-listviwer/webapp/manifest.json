@@ -1,0 +1,169 @@
+{
+  "_version": "1.86.0",
+  "sap.app": {
+    "id": "claimlistviwer",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.30.0",
+      "toolsId": "4b1fd8f3-cdb4-4ed6-8c96-37505447193e"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/odata/v4/claimtes03services/",
+        "type": "OData",
+        "settings": {
+          "annotations": [],
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.150.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "claimlistviwer.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "ClaimsList",
+          "target": "ClaimsList"
+        },
+        {
+          "pattern": "Claims({key}):?query:",
+          "name": "ClaimsObjectPage",
+          "target": "ClaimsObjectPage"
+        },
+        {
+          "pattern": "Claims({key})/Losstypes({key2}):?query:",
+          "name": "LosstypesObjectPage",
+          "target": "LosstypesObjectPage"
+        }
+      ],
+      "targets": {
+        "ClaimsList": {
+          "type": "Component",
+          "id": "ClaimsList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/Claims",
+              "variantManagement": "Page",
+              "navigation": {
+                "Claims": {
+                  "detail": {
+                    "route": "ClaimsObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ClaimsObjectPage": {
+          "type": "Component",
+          "id": "ClaimsObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Claims",
+              "navigation": {
+                "Losstypes": {
+                  "detail": {
+                    "route": "LosstypesObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "LosstypesObjectPage": {
+          "type": "Component",
+          "id": "LosstypesObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Claims/Losstypes"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  },
+  "sap.fe": {
+    "app": {
+      "enableLazyLoading": true
+    }
+  }
+}
