@@ -139,6 +139,14 @@
                     "route": "LosstypesObjectPage"
                   }
                 }
+              },
+              "sectionLayout": "Page",
+              "controlConfiguration": {
+                "Losstypes/@com.sap.vocabularies.UI.v1.LineItem#Losstypes": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
               }
             }
           }

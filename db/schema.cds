@@ -10,7 +10,7 @@ entity Claims : cuid, managed {
     Status      : String(20);
     amount      : Integer;
     country     : String(20);
-    Losstypes   : Composition of many Losstypes on  Losstypes.losstype = $self;
+    Losstypes   : Composition of many Losstypes on  Losstypes.claim = $self;
 } 
 entity Claimtypes : cuid, managed {
     cltype : String(15);
@@ -18,7 +18,11 @@ entity Claimtypes : cuid, managed {
     
 }
 entity Losstypes : cuid , managed {  
-     key losstype : Association to Claims;
-         losscause : String(10);
+      key  losstype : String(20);
+      claim : Association to Claims;
+        losscause : String(10);
          lossdesc : String(30);
+         lossCode   : String(20);
+        severity   : String(20);
+        category   : String(30);
 }

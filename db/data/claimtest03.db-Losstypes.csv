@@ -1,15 +1,23 @@
-losstype_ID,ID,losscause,lossdesc,createdAt,createdBy,modifiedAt,modifiedBy
-aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa,10000001-1111-1111-1111-111111111111,Natural Death,Death due to natural causes,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa,10000002-2222-2222-2222-222222222222,Accidental Death,Death due to road traffic accident,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb,10000003-3333-3333-3333-333333333333,Root Canal Treatment,Dental root canal procedure,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb,10000004-4444-4444-4444-444444444444,Dental Restoration,Tooth restoration using crown,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-cccccccc-cccc-cccc-cccc-cccccccccccc,10000005-5555-5555-5555-555555555555,Collision,Vehicle collision with another car,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-cccccccc-cccc-cccc-cccc-cccccccccccc,10000006-6666-6666-6666-666666666666,Theft of Vehicle,Complete vehicle theft,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-dddddddd-dddd-dddd-dddd-dddddddddddd,10000007-7777-7777-7777-777777777777,Burglary/Theft,Household contents stolen,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-dddddddd-dddd-dddd-dddd-dddddddddddd,10000008-8888-8888-8888-888888888888,Water/Pipes,Burst pipe damaged household contents,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee,10000009-9999-9999-9999-999999999999,Surgery,Hospital admission for surgery,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee,10000010-aaaa-bbbb-cccc-ddddeeeeffff,Emergency Admission,Emergency inpatient treatment,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-ffffffff-ffff-ffff-ffff-ffffffffffff,10000011-bbbb-cccc-dddd-eeeeffffffff,Cancer,Critical illness due to cancer diagnosis,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-ffffffff-ffff-ffff-ffff-ffffffffffff,10000012-cccc-dddd-eeee-ffffffffffff,Heart Attack,Acute myocardial infarction,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-99999999-9999-9999-9999-999999999999,10000013-dddd-eeee-ffff-111111111111,Financial Requirement,Partial surrender for personal financial needs,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
-99999999-9999-9999-9999-999999999999,10000014-eeee-ffff-1111-222222222222,Education Expense,Partial surrender for child's education,2026-08-05T10:00:00Z,system,2026-08-05T10:00:00Z,system
+losstype,ID,claim_ID,losscause,lossdesc,lossCode,severity,category,createdAt,createdBy,modifiedAt,modifiedBy
+Death,20000001-1111-1111-1111-111111111111,aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa,Natural,Death due to natural causes,LT101,High,Life,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Accidental Death,20000002-2222-2222-2222-222222222222,aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa,Accident,Death caused by accident,LT102,Critical,Life,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+
+Dental Restoration,20000003-3333-3333-3333-333333333333,bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb,Disease,Dental restoration treatment,LT103,Medium,Health,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Dental Surgery,20000004-4444-4444-4444-444444444444,bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb,Surgery,Dental surgical procedure,LT104,Medium,Health,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+
+Auto Accident,20000005-5555-5555-5555-555555555555,cccccccc-cccc-cccc-cccc-cccccccccccc,Collision,Vehicle collision damage,LT105,High,Motor,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Auto Theft,20000006-6666-6666-6666-666666666666,cccccccc-cccc-cccc-cccc-cccccccccccc,Theft,Vehicle stolen,LT106,Critical,Motor,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Partial Theft from Vehicle,20000007-7777-7777-7777-777777777777,cccccccc-cccc-cccc-cccc-cccccccccccc,Theft,Vehicle parts stolen,LT107,High,Motor,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+
+Burglary/Theft,20000008-8888-8888-8888-888888888888,dddddddd-dddd-dddd-dddd-dddddddddddd,Theft,Household items stolen,LT108,High,Property,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Water/Pipes,20000009-9999-9999-9999-999999999999,dddddddd-dddd-dddd-dddd-dddddddddddd,Damage,Pipe leakage damage,LT109,Medium,Property,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Storm/Hail,20000010-aaaa-bbbb-cccc-ddddeeeeffff,dddddddd-dddd-dddd-dddd-dddddddddddd,Natural,Storm and hail damage,LT110,High,Property,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+
+Hospital Inpatient,20000011-bbbb-cccc-dddd-eeeeffff1111,eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee,Illness,Hospital admission claim,LT111,High,Health,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Medical Devices,20000012-cccc-dddd-eeee-ffffaaaa2222,eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee,Treatment,Medical device requirement,LT112,Medium,Health,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+
+Critical Illness,20000013-dddd-eeee-ffff-aaaa33333333,ffffffff-ffff-ffff-ffff-ffffffffffff,Disease,Critical illness diagnosis,LT113,Critical,Health,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Disability,20000014-eeee-ffff-aaaa-bbbb44444444,ffffffff-ffff-ffff-ffff-ffffffffffff,Illness,Permanent disability claim,LT114,Critical,Health,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+
+Partial Surrender,20000015-ffff-aaaa-bbbb-cccc55555555,99999999-9999-9999-9999-999999999999,Financial,Partial policy surrender request,LT115,Low,Life,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
+Full Surrender,20000016-aaaa-bbbb-cccc-dddd66666666,99999999-9999-9999-9999-999999999999,Financial,Full policy surrender request,LT116,Medium,Life,2026-08-06T10:00:00Z,system,2026-08-06T10:00:00Z,system
