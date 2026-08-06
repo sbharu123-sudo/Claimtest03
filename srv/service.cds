@@ -3,6 +3,7 @@ service claimtes03services {
 
     entity Claims as projection on db.Claims;
      entity claimtypes as projection on db.Claimtypes;
-     entity Losstypes as projection on db.Losstypes
+     entity Losstypes as projection on db.Losstypes;
+     entity PolicyStatus as Projection on db.Policy
 
 }

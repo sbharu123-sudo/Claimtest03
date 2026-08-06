@@ -80,6 +80,14 @@ annotate service.Claims with @(
             $Type : 'UI.DataField',
             Value : createdBy,
         },
+        {
+            $Type : 'UI.DataField',
+            Value : policystatus_Plystscode,
+            Label : 'policystatus_Plystscode',
+            Criticality : amount,
+            CriticalityRepresentation : #WithIcon,
+            @UI.Importance : #High,
+        },
     ],
     UI.SelectionFields : [
         losstype,
@@ -248,4 +256,11 @@ annotate service.Losstypes with @(
         TypeImageUrl : 'sap-icon://detail-view',
     },
 );
+
+annotate service.Claims with {
+    policystatus @(
+        Common.Text : policystatus.statustext,
+        Common.Text.@UI.TextArrangement : #TextLast,
+    )
+};
 
